@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 708 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-328.278,-121)">
+        <g transform="matrix(1,0,0,1,420,-767)">
+            <g transform="matrix(1.17406,0,0,1,-439.246,792)">
+                <path d="M649,154.92C649,122.379 626.532,96 598.816,96L346.184,96C318.468,96 296,122.379 296,154.92L296,155.08C296,187.621 318.468,214 346.184,214L598.816,214C626.532,214 649,187.621 649,155.08L649,154.92Z" style="fill:rgb(59,130,246);"/>
+            </g>
+            <g transform="matrix(1.70463,0,0,1.70463,-604.134,720.883)">
+                <text x="323.848px" y="147.17px" style="font-family:'Gilroy-Black', 'Gilroy';font-weight:900;font-size:50px;fill:rgb(232,241,255);">B<tspan x="353.198px 380.648px 399.548px 427.698px 454.248px 482.398px " y="147.17px 147.17px 147.17px 147.17px 147.17px 147.17px ">ytovoy</tspan></text>
+                <text x="555.248px" y="147.17px" style="font-family:'Gilroy-Black', 'Gilroy';font-weight:900;font-size:50px;fill:rgb(59,130,246);">Ma<tspan x="627.098px 649.948px 668.848px " y="147.17px 147.17px 147.17px ">ste</tspan>r</text>
+            </g>
+        </g>
+    </g>
+</svg>
