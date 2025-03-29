@@ -10,14 +10,14 @@ const Footer = () => {
       <div className="container mx-auto my-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Категории */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">КАТЕГОРИИ</h3>
             <ul className="space-y-2">
               <li><Link href="/cleaning">Уборка</Link></li>
               <li><Link href="/maintenance">Тех. обслуживание</Link></li>
               <li><Link href="/industrial">Промышленный клининг</Link></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Для клиента */}
           <div>
