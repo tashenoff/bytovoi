@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import Banner from '../components/Banner';
 import SectionTitle from '../components/SectionTitle';
-import Image from 'next/image';
+
 
 const About = () => {
   return (
