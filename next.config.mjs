@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        ignoreDuringBuilds: true,
+   
         hostname: 'images.pexels.com',
         port: '',
         pathname: '/**',
