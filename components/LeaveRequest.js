@@ -14,9 +14,14 @@ const LeaveRequest = ({ title, children }) => {
         Оставьте свои данные, и мастер перезвонит вам в течение 5 минут
       </p>
 
-      <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+      <a
+        href="https://wa.me/77718721585"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-10 px-4 lg:w-1/2 w-full text-center py-3 bg-blue-500 border-white border text-white rounded-full"
+      >
         Вызвать мастера
-      </button>
+      </a>
     </Banner>
   );
 };
