@@ -20,7 +20,7 @@ const Footer = () => {
           </div> */}
 
           {/* Для клиента */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">ДЛЯ КЛИЕНТА</h3>
             <ul className="space-y-2">
               <li><Link href="/about">О нас</Link></li>
@@ -29,7 +29,7 @@ const Footer = () => {
               <li><Link href="/faq">Вопросы</Link></li>
               <li><Link href="/contacts">Контакты</Link></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Контакты */}
           <div>
