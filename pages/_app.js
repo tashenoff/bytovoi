@@ -1,4 +1,3 @@
-// pages/_app.js
 import '../styles/globals.css';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -18,6 +17,25 @@ function MyApp({ Component, pageProps }) {
     document.documentElement.setAttribute('data-theme', 'nord');
   }, []);
 
+  // Добавление Google Analytics
+  useEffect(() => {
+    // Создаем тег Google
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16964397746";
+    document.head.appendChild(script);
+
+    // Инициализация gtag
+    const gtagScript = document.createElement('script');
+    gtagScript.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16964397746');
+    `;
+    document.head.appendChild(gtagScript);
+  }, []);
+
   // Отслеживание маршрутов и управление состоянием загрузки
   useEffect(() => {
     const handleStart = () => setLoading(true);
@@ -27,7 +45,6 @@ function MyApp({ Component, pageProps }) {
     router.events.on('routeChangeComplete', handleComplete);
     router.events.on('routeChangeError', handleComplete);
 
-    // Удаляем обработчики событий при размонтировании
     return () => {
       router.events.off('routeChangeStart', handleStart);
       router.events.off('routeChangeComplete', handleComplete);
