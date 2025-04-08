@@ -24,10 +24,10 @@ const Banner = ({ title, bgimg = '', className = '', children = null, objectPosi
         )}
 
         {/* Затемнение фона */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <div className="absolute inset-0 bg-blue-800 bg-opacity-60 z-10"></div>
 
         {/* Контент */}
-        <div className="relative z-20 text-left lg:w-1/2 w-full py-6">
+        <div className="relative z-20  w-full py-6">
           <h1 className="mb-5 lg:text-5xl text-3xl font-bold">{title}</h1>
           {children}
         </div>

@@ -8,6 +8,7 @@ import Banner from '../../components/Banner';
 import AdvantagesList from '../../components/AdvantagesList'; // Компонент для преимуществ
 import Reviews from '../../components/Reviews';
 import SectionHeader from '../../components/SectionHeader';
+import SnowfallEffect from '../../components/SnowfallEffect';
 
 const ServicePage = () => {
     const router = useRouter();
@@ -25,7 +26,20 @@ const ServicePage = () => {
 
     return (
         <Layout>
-            <Banner bgimg={service.banner} className='h-[500px] text-white' title={service.title} />
+            <div className='relative h-[500px] overflow-hidden'>
+                {slug === 'remont-holodilnikov' && <SnowfallEffect />} {/* Эффект только на этой странице */}
+                <Banner bgimg={service.banner} className='h-[500px] text-white text-center' title={service.title} >
+                    <a
+                        href="https://wa.me/77718721585"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mt-10 px-4 lg:w-1/2 w-full text-center py-3 bg-red-500 font-bold  uppercase text-sm border-white border text-white rounded-full"
+                    >
+                        Вызвать мастера
+                    </a>
+
+                </Banner>
+            </div>
             <div className="container mx-auto py-10">
                 <SectionHeader
                     title="Описание услуги"
@@ -36,7 +50,7 @@ const ServicePage = () => {
                     <h2 className="text-3xl font-bold mb-6 text-center">Наши преимущества</h2>
                     <AdvantagesList advantages={service.advantages} />
                 </div>
-{/* 
+                {/* 
                 <div className="mt-16">
                     <h2 className="text-3xl font-bold mb-6 text-center">Виды работ</h2>
                     <Portfolio portfolioItems={service.portfolio} />
